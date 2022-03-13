@@ -1,0 +1,17 @@
+{
+  "name": "trackday-form",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch --no-source-map sass/:css/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.45.1",
+    "scss": "^0.2.4"
+  }
+}

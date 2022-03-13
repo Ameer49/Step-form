@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="main--heading">
+        <h1>CREATE AN ACCOUNT</h1>
+    </div>
+    <div class="container">
+        <div class="form__info">
+            <div class="form__info__wrapper">
+                <div class="info__form__heading">
+                    <h2>Registration Form</h2>
+                </div>
+                <p class="lead">Fill the form to get registered</p>
+                <span class="info__form__hr"></span>
+                <div class="line">
+                    <div class="indicator"></div>
+                    <h2 onclick="nextPrev(-1)">User Profile</h2>
+                    <h2 onclick="nextPrev(1)">Residential Area</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="user__form">
+            <form id="regForm">
+                <!-- One "tab" for each step in the form: -->
+                <div class="tab">
+                    <div class="heading_info">
+                        <h2>User Profile</h2>
+                        <hr>
+                    </div>
+                    <div class="user-profile-form-group">
+                        <div class="user-profile-form-control">
+                            <label for="email">
+                                EMAIL*
+                            </label>
+                            <input type="email" class="">
+                        </div>
+
+                        <div class="user-profile-form-control">
+                            <label for="password">
+                                PASSWORD*
+                            </label>
+                            <input type="password" class="">
+                        </div>
+                    </div>
+
+                    <div class="user-profile-form-group">
+                        <div class="user-profile-form-control">
+                            <label for="password">
+                                PASSWORD CONFIRMATION
+                            </label>
+                            <input type="password" class="">
+                        </div>
+
+                        <div class="user-profile-form-control">
+                            <label for="company name">
+                                COMPANY NAME
+                            </label>
+                            <input type="text" class="">
+                        </div>
+                    </div>
+
+                    <div class="user-profile-form-group">
+                        <div class="user-profile-form-control">
+                            <label for="fname">
+                                FIRST NAME *
+                            </label>
+                            <input type="text" class="">
+                        </div>
+
+                        <div class="user-profile-form-control">
+                            <label for="lname">
+                                LAST NAME *
+                            </label>
+                            <input type="text" class="">
+                        </div>
+                    </div>
+
+                    <div class="user-profile-form-group">
+                        <div class="user-profile-form-control">
+                            <label for="phone">
+                                PHONE*
+                            </label>
+                            <input type="text" class="">
+                        </div>
+
+                        <!-- <div class="user-profile-form-control">
+                                        <label for="company name">
+                                            COMPANY NAME
+                                        </label>
+                                        <input type="text" class="">
+                                    </div> -->
+                    </div>
+
+
+                </div>
+                <div class="tab">
+                    <div class="heading_info">
+                        <h2>Residential Area</h2>
+                        <hr>
+                    </div>
+                    <div class="user-profile-form-group">
+                        <div class="user-profile-form-control">
+                            <label for="address">
+                                ADDRESS*
+                            </label>
+                            <input type="text" class="">
+                        </div>
+
+                        <div class="user-profile-form-control">
+                            <label for="text">
+                                COUNTRY*
+                            </label>
+                            <input type="text" class="">
+                        </div>
+                    </div>
+
+                    <div class="user-profile-form-group">
+                        <div class="user-profile-form-control">
+                            <label for="cars">COUNTRY*</label>
+                            <select name="countries" id="countries">
+                                <option value="Pakistan">Pakistan</option>
+                                <option value="Pakistan">Pakistan</option>
+                                <option value="Pakistan">Pakistan</option>
+                                <option value="Pakistan">Pakistan</option>
+                            </select>
+                        </div>
+
+                        <div class="user-profile-form-control">
+                            <label for="cars">STATE*</label>
+                            <select name="company" id="company">
+                                <option value="Company Name">Company Name</option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="user-profile-form-group">
+
+                        <div class="user-profile-form-control">
+                            <label for="text">
+                                COUNTRY*
+                            </label>
+                            <input type="text" class="">
+                        </div>
+
+                        <div class="user-profile-checkbox">
+                            <div class="checkbox">
+                                <span>
+                                    <input type="checkbox">
+                                    <label for="" class="custom-label">I accept the <span class="custom-span">Terms and
+                                            Conditions</span>
+                                        and <span class="custom-span">Privacy Policy</span></label>
+                                </span>
+                                <span>
+                                    <input type="checkbox">
+                                    <label for="">Remember me</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div style="overflow:auto;">
+                    <div class="user__form__button">
+                        <button type="button" id="prevBtn" onclick="nextPrev(-1)">BACK</button>
+                        <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                    </div>
+                </div>
+                <!-- Circles which indicates the steps of the form: -->
+                <div style="text-align:center;margin-top:40px;">
+                    <span class="step"></span>
+                    <span class="step"></span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+<script src="js/style.js"></script>
+
+</html>

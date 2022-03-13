@@ -1,0 +1,204 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=date],
+select,
+textarea {
+  width: 100%;
+  padding: 0.75em 0.45em;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  border: 1px solid #DDDBDC;
+}
+
+input[type=submit] {
+  font: inherit;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+}
+
+.form__info {
+  flex: 1 1 30%;
+}
+.form__info .form__info__wrapper {
+  padding: 10px 10px;
+}
+.form__info .form__info__wrapper .info__form__hr {
+  height: 1px;
+  width: 70%;
+  display: inline-block;
+  background: #78797C;
+}
+.form__info .form__info__wrapper .info__form__heading h2 {
+  margin: 0px 0px;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  color: #78797C;
+}
+.form__info .form__info__wrapper .lead {
+  margin: 0px 0px;
+  color: #78797C;
+}
+.form__info .form__info__wrapper h2 {
+  font-family: sans-serif;
+  color: #78797C;
+}
+
+.user__form {
+  flex: 1 1 70%;
+}
+.user__form #regForm {
+  background-color: #F2F3F9;
+  font-family: Raleway;
+  padding: 1px 40px;
+}
+.user__form .heading_info h2 {
+  padding: 20px 0px;
+  color: #78797C;
+}
+
+.checkbox > span {
+  display: flex;
+}
+
+.custom-span {
+  color: red;
+}
+
+.line {
+  border-left: 5px solid #d5d5d5;
+  padding-left: 15px;
+  margin: 30px 0;
+  position: relative;
+}
+
+.line .indicator {
+  position: absolute;
+  top: 0;
+  bottom: 50%;
+  width: 3px;
+  background: #ee3e3e;
+  left: -4px;
+  border-radius: 100px;
+}
+
+.line h2 {
+  margin-bottom: 18px;
+  white-space: nowrap;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+button {
+  width: 194px;
+  height: 65px;
+  font-size: 1.2rem;
+  color: #FFFFFF;
+  background-color: #ED1F24;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  opacity: 1;
+}
+
+#prevBtn {
+  background-color: #78797C;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: none;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: red;
+}
+
+.user-profile-form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0rem;
+}
+
+.user-profile-form-control {
+  width: 48%;
+}
+
+.user__form__button {
+  width: 100%;
+}
+.user__form__button #prevBtn {
+  float: left;
+}
+.user__form__button #nextBtn {
+  float: right;
+}
+
+.user-profile-checkbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 48%;
+}
+
+@media (max-width: 992px) {
+  .user__form {
+    flex: 1 1 100%;
+  }
+  .user__form #regForm {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .user-profile-form-group {
+    display: block;
+    width: 100%;
+    padding: 0px;
+  }
+
+  .user-profile-form-control {
+    width: 100%;
+    padding: 5px 0px;
+  }
+
+  .user-profile-checkbox {
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  .user__form__button {
+    margin-top: 10px;
+  }
+}
